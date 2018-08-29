@@ -1,0 +1,114 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  background: #24c7f9 ;
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#main-div {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1em;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(25,25,25,.25);
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  &:focus , &:active {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn {
+  font-size: 14px;
+  margin: 0 .5em;
+  border-radius: 2em;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  background: none;
+  color: darken(#24c7f9, 20%);
+  border: 1px solid;
+  letter-spacing: 1px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #4fc08d;
+  border: #24c7f9 1px solid;
+  transition: 250ms ease-out;
+  &:hover, &:focus {
+    color: #fff;
+    background: #24c7f9;
+  }
+}
+
+form {
+  width: 100%;
+  padding: 1.5rem 1rem 0 1rem;
+  display: flex;
+  &__input {
+    width: 100%;
+    font-size: 14px;
+    margin: 0 .5em;
+    border-radius: 2em;
+    padding: 0.75em 1.5em;
+    background: none;
+    font-family: $font-family;
+    border: #e3e3e3 1px solid;
+    transition: border 250ms ease-out;
+    &:focus {
+      border: #24c7f9 1px solid;
+      outline: none;
+    }
+  }
+}
+
+ul {
+    width : 100% ;
+    list-style : none ;
+}
+li {
+    width : 100% ;
+    height : 50px;
+}
+#toggleButton {
+    margin-top : -5px ;
+    float : right ;
+    font-size : 12px ;
+}
+.filters {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1rem 1.5rem 1rem;
+}
+.todo-list {
+    text-align: left ;
+}
+.list-item {
+    align:left;
+}
