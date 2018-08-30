@@ -4,10 +4,10 @@ import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 import '../components/style.css'
 
-const App = () => (
+const App = ({ match }) => (
     <div id="main-div">
         <AddTodo />
-        <VisibleTodoList />
+        <VisibleTodoList filter={match.params.filter || 'SHOW_ALL'} />
         <Footer />
     </div>
 );
